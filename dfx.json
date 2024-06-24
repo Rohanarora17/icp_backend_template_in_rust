@@ -1,0 +1,17 @@
+{
+  "canisters": {
+    "ic_stable_structure_implementation_backend": {
+      "candid": "src/ic_stable_structure_implementation_backend/ic_stable_structure_implementation_backend.did",
+      "package": "ic_stable_structure_implementation_backend",
+      "type": "rust"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
