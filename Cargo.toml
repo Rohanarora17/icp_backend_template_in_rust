@@ -1,5 +1,3 @@
 [workspace]
-members = [
-    "src/ic_stable_structure_implementation_backend"
-]
+members = ["src/ic_stable_structure_implementation_backend"]
 resolver = "2"

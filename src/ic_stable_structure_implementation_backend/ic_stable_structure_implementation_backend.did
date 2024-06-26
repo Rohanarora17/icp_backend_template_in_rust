@@ -1,3 +1,11 @@
+type PaginationParams = record { page_size : nat64; page : nat64 };
+type PaginationResponse = record {
+  total_items : nat64;
+  items : vec vec UserData;
+};
+type UserData = record { name : text; email : text; profile_pic : opt blob };
 service : {
-    "greet": (text) -> (text) query;
+  add_user_data : (UserData) -> (text);
+  get_user_data : () -> (vec UserData) query;
+  list_all_users : (PaginationParams) -> (PaginationResponse) query;
 }
