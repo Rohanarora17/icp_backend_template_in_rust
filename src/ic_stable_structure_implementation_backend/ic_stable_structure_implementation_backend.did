@@ -8,4 +8,5 @@ service : {
   add_user_data : (UserData) -> (text);
   get_user_data : () -> (vec UserData) query;
   list_all_users : (PaginationParams) -> (PaginationResponse) query;
+  set_username : (text) -> (text);
 }
